@@ -7,7 +7,7 @@ variable "project_id" {
 variable "region" {
   description = "Region for the storage bucket"
   type        = string
-  default     = "asia-south2" # Set the default location to Mumbai
+  default     = "us-central1" # Set the default location to Mumbai
 }
 
 variable "bucket_name" {
