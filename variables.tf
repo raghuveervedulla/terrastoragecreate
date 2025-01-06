@@ -16,12 +16,6 @@ variable "bucket_name" {
   default     = "example2807"
 }
 
-variable "file_path" {
-  description = "Path to the file to upload"
-  type        = string
-  default     = "./example.txt"
-}
-
 variable "file_name" {
   description = "Name of the file in the storage bucket"
   type        = string

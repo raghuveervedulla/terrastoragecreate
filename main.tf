@@ -25,5 +25,5 @@ resource "google_storage_bucket_iam_binding" "public_access" {
 resource "google_storage_bucket_object" "example_file" {
   name   = var.file_name
   bucket = google_storage_bucket.example_bucket.name
-  source = file("${path.module}/${var.file_path}")
+  source = "files/example.txt"
 }
