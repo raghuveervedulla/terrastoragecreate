@@ -5,7 +5,7 @@ provider "google" {
 
 # Create a Storage Bucket
 resource "google_storage_bucket" "example_bucket" {
-  name                        = "teset"
+  name                        = var.bucket_name
   location                    = var.region
   force_destroy               = true
   uniform_bucket_level_access = true

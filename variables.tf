@@ -10,6 +10,12 @@ variable "region" {
   default     = "us-central1" # Set the default location to Mumbai
 }
 
+variable "bucket_name" {
+  description = "Name of the storage bucket"
+  type        = string
+  default     = "example2807"
+}
+
 variable "file_name" {
   description = "Name of the file in the storage bucket"
   type        = string
