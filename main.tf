@@ -12,10 +12,6 @@ resource "google_storage_bucket" "example_bucket" {
   versioning {
     enabled = false
   }
-  # Add labels for tagging
-  labels = {
-    department = "finance" # Replace "finance" with the appropriate department name
-  }
 }
 
 # Grant Public Access to the Bucket
