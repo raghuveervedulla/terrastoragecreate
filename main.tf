@@ -9,6 +9,13 @@ resource "google_storage_bucket" "example_bucket" {
   location                    = var.region
   force_destroy               = true
   uniform_bucket_level_access = true
+  versioning {
+    enabled = false
+  }
+  # Add labels for tagging
+  labels = {
+    department = "finance" # Replace "finance" with the appropriate department name
+  }
 }
 
 # Grant Public Access to the Bucket

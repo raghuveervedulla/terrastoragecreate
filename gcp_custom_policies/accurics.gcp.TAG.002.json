@@ -1,0 +1,13 @@
+{
+    "name": "checkMissingTagsOnResource",
+    "file": "checkMissingTagsOnResource.rego",
+    "policy_type": "gcp",
+    "resource_type": "google_storage_bucket",
+    "template_args": null,
+    "severity": "MEDIUM",
+    "description": "Ensure that Cloud Storage buckets have a 'department' tag applied directly on the resource.",
+    "reference_id": "accurics.gcp.TAG.002",
+    "category": "Tagging",
+    "version": 1,
+    "id": "AC_GCP_0236"
+}
