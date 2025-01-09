@@ -1,0 +1,10 @@
+version: "1.0"
+policies:
+  - type: gcp
+    path: "./gcp_custom_policies"
+audit:
+  - type: terraform
+    path: "./"
+rules:
+  enforce_required_tags:
+    - "department"
